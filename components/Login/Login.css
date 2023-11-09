@@ -1,0 +1,95 @@
+/* LoginForm.css */
+
+/* Form container */
+.login-form {
+    max-width: 488px;
+    height: 420px;
+    margin: 50 auto;
+    padding: 32px;
+    border-top: 4px solid #3AC7EC;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  .login-form>h2 {
+    text-align: center;
+  }
+  /* Form elements */
+  div {
+    margin: 16px 0 32px 0;
+  }
+  
+ label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .textbox {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: #f9f9f9;
+  }
+  
+  button {
+    width: 216px;
+    padding: 10px;
+    background-color: #3FD28B;
+    color: #1F2834;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #0000003D;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .forgot-button {
+    text-transform: uppercase;
+    color: #1F7A54;
+    font-size: 14px;
+    float: right;
+    cursor: pointer;
+  }
+
+.remember-checkbox {
+  accent-color: #1F7A54;
+  height: 24px;
+  width: 18px;
+  display: inline;
+  /* margin-top: 10px; */
+}
+
+.remember-text {
+  color: #222222;
+  display: inline;
+  margin-left: 10px;
+}
+
+.acc-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.plain-text {
+  font-size: 12px;
+}
+
+.create-btn {
+  margin: -5px -14px;
+}
+
+.pass-text {
+  position: relative;
+}
+
+.show-pass-btn {
+  cursor: pointer;
+  position: absolute;
+  margin: 10px -25px;
+}
