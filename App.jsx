@@ -46,15 +46,15 @@ export default function App() {
             <Navbar 
                 isLoggedIn={isLoggedIn} 
             />
-            {isLoggedIn ? <Walkin /> : <Login 
+            {/* {isLoggedIn ? <Walkin /> : <Login 
                 email={email} 
                 handleEmailChange={handleEmailChange}
                 password={password}
                 handleShowPassWord={handleShowPassWord}
                 handlePasswordChange={handlePasswordChange}
                 handleSubmit={handleSubmit}
-            />}
-            {/* <Walkin /> */}
+            />} */}
+            <Walkin />
             <Footer />
         </div>
     )
