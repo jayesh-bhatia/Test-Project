@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Login from "./components/Login/Login"
 import Footer from "./components/Footer/Footer"
 import UsersData from "./UserDetails.json"
+import Walkin from "./components/Walkin/Walkin"
 
 export default function App() {
     const [email, setEmail] = React.useState('');
@@ -45,15 +46,15 @@ export default function App() {
             <Navbar 
                 isLoggedIn={isLoggedIn} 
             />
-            <Login 
+            {isLoggedIn ? <Walkin /> : <Login 
                 email={email} 
                 handleEmailChange={handleEmailChange}
                 password={password}
                 handleShowPassWord={handleShowPassWord}
                 handlePasswordChange={handlePasswordChange}
                 handleSubmit={handleSubmit}
-                isLoggedIn={isLoggedIn} 
-            />
+            />}
+            {/* <Walkin /> */}
             <Footer />
         </div>
     )
