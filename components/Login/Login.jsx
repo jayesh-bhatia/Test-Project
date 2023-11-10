@@ -2,72 +2,47 @@ import React from "react";
 import "./Login.css"
 import ShowPass from "./visibility_green_24dp.svg"
 
-export default function Login() {
-    const [username, setUsername] = React.useState('');
-    const [password, setPassword] = React.useState({
-        password: "",
-        showPassword: false,
-    });
+
+export default function Login(props) {
+    
     const [rememberMe, setRememberMe] = React.useState(false);
-
     
-    const handleUsernameChange = (e) => {
-        setUsername(e.target.value);
-    };
-    
-    const handlePasswordChange = (e) => {
-        setPassword(e.target.value);
-    };
-
-    const handleRememberMeChange = (e) => {
+    function handleRememberMeChange(e) {
         setRememberMe(e.target.checked);
     };
     
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        
-        console.log('Submitted with:', { username, password });  
-    };
-
-    function handleShowPassWord () {
-        setPassword({
-            ...password,
-            showPassword: !password.showPassword,
-        });
-    }
-
     return (
         <div className="login-form">
             <h2>Log in</h2>
-            <form onSubmit={handleSubmit}>
-                <div>
+            <form onSubmit={props.handleSubmit}>
+                <div className="login-div">
                 <input
                     type="text"
-                    id="username"
-                    value={username}
-                    onChange={handleUsernameChange}
+                    id="email"
+                    value={props.email}
+                    onChange={props.handleEmailChange}
                     placeholder="Email ID*"
                     className="textbox"
                 />
                 <label className="forgot-button">Forgot Email ID?</label>
                 </div>
-                <div>
+                <div className="login-div">
                 <input
                     type={
-                        password.showPassword
+                        props.password.showPassword
                             ? "text"
                             : "password"
                     }
                     id="password"
-                    value={password.password}
-                    onChange={handlePasswordChange}
+                    value={props.password.password}
+                    onChange={props.handlePasswordChange}
                     placeholder="Password*"
                     className="textbox pass-text"
                 />
-                <img src={ShowPass} className="show-pass-btn" onClick={handleShowPassWord} />
+                <img src={ShowPass} className="show-pass-btn" onClick={props.handleShowPassWord} />
                 <label className="forgot-button">Forgot Password?</label>
                 </div>
-                <div className="remember-div">
+                <div className="login-div remember-div">
                 <input
                     type="checkbox"
                     id="rememberMe"
@@ -77,10 +52,10 @@ export default function Login() {
                 />
                 <h4 htmlFor="rememberMe" className="remember-text">Remember Me</h4>
                 </div>
-                <div>
+                <div className="login-div">
                     <button type="submit" className="login-btn">Login</button>
                 </div>
-                <div className="acc-btn">
+                <div className="login-div acc-btn">
                     <h4 className="plain-text">Not registered yet?</h4>
                     <h4 className="forgot-button create-btn">Create an account</h4>
                 </div>

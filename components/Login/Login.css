@@ -16,11 +16,11 @@
     text-align: center;
   }
   /* Form elements */
-  div {
+  .login-div {
     margin: 16px 0 32px 0;
   }
   
- label {
+ .login-form>label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -34,7 +34,7 @@
     background-color: #f9f9f9;
   }
   
-  button {
+  .login-btn {
     width: 216px;
     padding: 10px;
     background-color: #3FD28B;
