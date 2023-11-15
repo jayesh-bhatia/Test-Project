@@ -12,13 +12,16 @@ const jobDetails = JobDetails.map(item => {
             dateTo={item.dateTo}
             location={item.location}
             profile={item.profile}
+            internshipAvailable={item.internshipAvailable}
+            expiryDays={item.expiryDays}
+            isExpiring={item.isExpiring}
         />
     )
 })
 
 export default function Walkin(props){
     return (
-        <div>
+        <div className="walkin-div">
             {jobDetails}
         </div>
     )

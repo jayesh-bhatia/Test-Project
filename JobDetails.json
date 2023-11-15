@@ -5,11 +5,14 @@
         "dateFrom": "10-Jul-2021",
         "dateTo": "11-Jul-2021", 
         "location": "Mumbai",
+        "internshipAvailable": false,
+        "isExpiring": true,
+        "expiryDays": 5,
         "profile": [
             {
                 "profId": 1,
                 "title": "Instructional Designer",
-                "src":"InstructionalDesigner"
+                "src":"./components/Description/Profiles/images/Instructional Designer.svg"
             }
         ]
     },
@@ -19,21 +22,46 @@
         "dateFrom": "03-Jul-2021",
         "dateTo": "04-Jul-2021", 
         "location": "Mumbai",
+        "internshipAvailable": true,
+        "isExpiring": false,
+        "expiryDays": 0,
         "profile": [
             {
                 "profId": 2,
                 "title": "Instructional Designer",
-                "src": "InstructionalDesigner"
+                "src": "./components/Description/Profiles/images/Instructional Designer.svg"
             },
             {
                 "profId": 3,
                 "title": "Software Engineer",
-                "src": "InstructionalDesigner"
+                "src": "./components/Description/Profiles/images/Instructional Designer.svg"
             },
             {
                 "profId": 4,
                 "title": "Software Quality Engineer",
-                "src": "SoftwareQualityEngineer"
+                "src": "./components/Description/Profiles/images/Software Quality Engineer.svg"
+            }
+        ]
+    },
+    { 
+        "id": 3,
+        "title": "Walk In for Design and Development Job Role", 
+        "dateFrom": "10-Jul-2021",
+        "dateTo": "11-Jul-2021", 
+        "location": "Mumbai",
+        "internshipAvailable": false,
+        "isExpiring": false,
+        "expiryDays": 0,
+        "profile": [
+            {
+                "profId": 5,
+                "title": "Instructional Designer",
+                "src": "./components/Description/Profiles/images/Instructional Designer.svg"
+            },
+            {
+                "profId": 6,
+                "title": "Software Engineer",
+                "src": "./components/Description/Profiles/images/Instructional Designer.svg"
             }
         ]
     }

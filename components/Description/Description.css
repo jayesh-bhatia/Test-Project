@@ -53,6 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 26px;
 }
 
 .red-label {
@@ -64,4 +65,15 @@
     position: absolute;
     top: -8px;
     right: 18px;
+}
+
+.internship-div {
+    font-size: 10px;
+    background-color: #EEDD6B;
+    color: #222222;
+    border-radius: 9px;
+    border: none;
+    width: 218px;
+    padding: 3px;
+    margin-top: 19px;
 }

@@ -5,18 +5,19 @@ import Profiles from "./Profiles/Profiles";
 
 
 export default function Description(props){
-      const profileDetails = props.profile.map(item => {
+      const profileDetails = props.profile.map((item, index) => {
         return (
             <Profiles
                 key={item.profId}
                 src={item.src}
                 title={item.title}
+                isLast={index === props.profile.length - 1}
             />
         )
     })
     return (
         <div className="description">
-            <label className="red-label">Expires in 5 days</label>
+            {props.isExpiring && <label className="red-label">Expires in {props.expiryDays} days</label>}
             <div className="general-info">
                 <h1 className="header">{props.title}</h1>
                 <label className="date">Date & time:</label>
@@ -30,6 +31,9 @@ export default function Description(props){
                 <label className="date">Job Roles: </label>
                 {profileDetails}
             </div>
+            {props.internshipAvailable && <div className="internship-div">
+                <label className="internship-class">Internship Opportunity for MCA Students</label>
+            </div>}
             <div className="button-div">
                 <button className="view-details">View More Details</button>
             </div>
