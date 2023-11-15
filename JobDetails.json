@@ -5,7 +5,13 @@
         "dateFrom": "10-Jul-2021",
         "dateTo": "11-Jul-2021", 
         "location": "Mumbai",
-        "profile": "Instructional Designer"
+        "profile": [
+            {
+                "profId": 1,
+                "title": "Instructional Designer",
+                "src":"InstructionalDesigner"
+            }
+        ]
     },
     { 
         "id": 2,
@@ -13,6 +19,22 @@
         "dateFrom": "03-Jul-2021",
         "dateTo": "04-Jul-2021", 
         "location": "Mumbai",
-        "profile": "Instructional Designer"
+        "profile": [
+            {
+                "profId": 2,
+                "title": "Instructional Designer",
+                "src": "InstructionalDesigner"
+            },
+            {
+                "profId": 3,
+                "title": "Software Engineer",
+                "src": "InstructionalDesigner"
+            },
+            {
+                "profId": 4,
+                "title": "Software Quality Engineer",
+                "src": "SoftwareQualityEngineer"
+            }
+        ]
     }
 ]
